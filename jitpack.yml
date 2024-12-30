@@ -2,6 +2,7 @@ jdk:
   - openjdk11
 
 before_install:
+  - chmod +x gradlew    # Add this line to make gradlew executable
   - ./gradlew clean
 
 install:
