@@ -13,10 +13,9 @@
 
     <uses-permission android:name="android.permission.VIBRATE" />
 
-    <application android:theme="@style/Theme.AppCompat">
+    <application>
         <activity
             android:name="ScannerActivity"
-            android:theme="@style/Theme.AppCompat"
             android:exported="false" />
     </application>
 
