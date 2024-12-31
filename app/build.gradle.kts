@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.example.barcodereader"
-    compileSdk = 35
+    compileSdk = 34
 
     buildFeatures{
         viewBinding = true
@@ -41,7 +41,7 @@ android {
 
 dependencies {
 
-    implementation(libs.androidx.core.ktx)
+    implementation("androidx.core:core-ktx:1.9.0")
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
     implementation(libs.androidx.activity)
@@ -49,5 +49,6 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
-    implementation(project(":qrcodereader"))
+//    implementation(project(":qrcodereader"))
+    implementation("com.github.jithukrishnaju-tech:qrbarcodereader:1.0.5")
 }
